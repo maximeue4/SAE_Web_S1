@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    background-color: white;
+    color: #000;
+}
+
+/* Debut Navigation */
+
+.logo {
+  position: absolute;
+  left: 5%;
+  margin-top: calc(var(--h3)*-0.25);
+}
+
+.logo b { font-size: var(--h3); }
+
+nav {
+  margin: 40px 0; /* Marge 40px sur tout le bas et le haut */
+  text-align: right;
+  font-size: var(--h4);
+  padding-right: 5%;
+}
+
+nav a {
+  margin: 0 0.75rem; /* Espace entre les éléments */
+}
+
+nav b {
+  font-weight : normal; /* Enlever le texte en gras */
+}
+
+nav b:hover{ text-decoration: underline; }
+
+/* Fin Navigation */
+
+/* Debut Section 1 (Home) */
+
+.secton-home {
+  background-image : url(images/banniere-tennis-de-table.png);
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.secton-home h1 {
+  font-size: var(--h1);
+}
+
+.secton-home button {
+  border: none;
+  font-weight: bold;
+  background-color: #ff0000;
+  margin-top: 50px;
+  width: 200px;
+  height: 50px;
+  font-size: var(--h4);
+}
+
+/* Fin Section 1 (Home) */
+
+/* Debut Section Produits */
+
+.img-product, .img-product img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Fin Section Produits */
+
+/* Debut Bas de Page */
+
+footer {
+  background-color: #2F4F4F;
+  color: white;
+  padding: 50px;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div ul {
+  padding: 0;
+}
+
+footer div ul li {
+  margin: 20px 0;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+footer div ul li:hover { text-decoration: underline; }
+
+/* Fin Bas de Page */
+
+/* navigation mobile */
+
+@media all and (max-width:  629px) {
+
+  .logo {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    position: static;
+    display: block;
+    text-align: center;
+  }
+  .logo b { font-size: var(--h3); }
+
+  nav { display: block; padding: 0; text-align: center; }
+
+  .secton-home h1 {
+    font-size: var(--h2);
+    margin: 0 20px;
+  }
+
+  footer div {
+    display: block;
+    justify-content: initial;
+  }
+
+}
